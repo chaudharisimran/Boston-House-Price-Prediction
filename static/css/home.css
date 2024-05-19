@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{
+    background-color: black;
+}
+h1{
+    color: #d98cd9;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+}
+section .imgBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgBx:before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /*background: linear-gradient(225deg,#e91e63,#03a9f4);*/
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBx img
+{
+     position: absolute;
+     top:0;
+     left:0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+section .contentBx
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    padding-bottom: 170px;
+}
+section .contentBx .formBx
+{
+    width: 100%;
+    margin-top: 700px;
+}
+
+section .contentBx .formBx .inputBx
+{
+    /*margin-bottom: 20px;*/
+    margin: 10px 0 5px 0;
+    width: cal(100% / 2 - 20px);
+}
+
+section .contentBx .formBx .inputBx input{
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    color: grey;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+section .contentBx .formBx .inputBx button
+{
+    background: #d98cd9;
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 300px;
+}

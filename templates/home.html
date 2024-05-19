@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -13,35 +14,77 @@
 </head>
 
 <body>
- <div class="login">
-	<h1>Boston House Price Prediction</h1>
-
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="CRIM" placeholder="CRIM" required="required" /><br>
-    	<input type="text" name="ZN" placeholder="ZN" required="required" /><br>
-        <input type="text" name="INDUS" placeholder="INDUS" required="required" /><br>
-        <input type="text" name="CHAS" placeholder="CHAS" required="required" /><br>
-        <input type="text" name="NOX" placeholder="NOX" required="required" /><br>
-        <input type="text" name="RM" placeholder="RM" required="required" /><br>
-        <input type="text" name="Age" placeholder="Age" required="required" /><br>
-        <input type="text" name="DIS" placeholder="DIS" required="required" /><br>
-        <input type="text" name="RAD" placeholder="RAD" required="required" /><br>
-        <input type="text" name="TAX" placeholder="TAX" required="required" /><br>
-        <input type="text" name="PTRATIO" placeholder="PTRATIO" required="required" /><br>
-        <input type="text" name="B" placeholder="B" required="required" /><br>
-        <input type="text" name="LSTAT" placeholder="LSTAT" required="required" /><br>
-
-       
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-
-   <br>
-   <br>
-  
-   
- </div>
+  <header>
+    <h1>Boston House Price Prediction</h1>
+  </header>
+  <section>
+    <div class="imgBx">
+     <img src="{{ url_for('static', filename='images/house.jpg') }}">
+    </div> 
+    <div class="contentBx">
+      <div class="formBx">
+           <!-- Main Input For Receiving Query to our ML -->
+          <form action="{{ url_for('predict')}}"method="post">
+            <div class="inputBx">
+            <input type="text" name="CRIM" placeholder="CRIM" required="required" />
+            </div>
+            
+            <div class="inputBx">
+            <input type="text" name="ZN" placeholder="ZN" required="required" />
+            </div>
+            
+            <div class="inputBx">
+              <input type="text" name="INDUS" placeholder="INDUS" required="required" />
+            </div>
+          
+            <div class="inputBx">
+              <input type="text" name="CHAS" placeholder="CHAS" required="required" />
+            </div>
+           
+            <div class="inputBx">
+              <input type="text" name="NOX" placeholder="NOX" required="required" />
+            </div>  
+            
+            <div class="inputBx">
+              <input type="text" name="RM" placeholder="RM" required="required" />
+            </div>
+            
+            <div class="inputBx">
+              <input type="text" name="Age" placeholder="Age" required="required" />
+            </div>
+            
+            <div class="inputBx">
+              <input type="text" name="DIS" placeholder="DIS" required="required" />
+            </div>
+            
+            <div class="inputBx">
+              <input type="text" name="RAD" placeholder="RAD" required="required" />
+            </div>
+            
+            <div class="inputBx">
+              <input type="text" name="TAX" placeholder="TAX" required="required" />
+            </div>
+            <div class="inputBx"> 
+              <input type="text" name="PTRATIO" placeholder="PTRATIO" required="required" />
+            </div>
+            <div class="inputBx"> 
+              <input type="text" name="B" placeholder="B" required="required" />
+            </div>
+            <div class="inputBx"> 
+              <input type="text" name="LSTAT" placeholder="LSTAT" required="required" />
+            </div>
+            <div class="inputBx">
+              <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+           </div>
+             
+             
+          </form>
+      
+         <br>
+         <br> 
+       </div>
+    </div>
+  </section>
  
 
 </body>
