@@ -36,16 +36,18 @@
 
 **Create a new virtual environment** 
 ```
-python -m venv housingenv 
+python -m venv ourenv 
 ```
 **Activate our virtual environment** 
 ```
-housingenv\Scripts\activate
+ourenv\Scripts\activate
 ```
 **Install all libraries in environment from requirement.txt file** 
 ```
 pip install -r requirements.txt
 ```
+
+
 
 
 

@@ -3,4 +3,5 @@ pandas
 numpy
 matplotlib
 plotly
-sklearn
+scikit-learn==1.0.2
+nbformat
